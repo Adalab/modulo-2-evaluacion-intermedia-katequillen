@@ -1,0 +1,10 @@
+.fill {
+  height: fit-content;
+  width: fit-content;
+  border: solid, black, 2px;
+}
+
+.main {
+  background-color: rgb(63, 63, 216);
+  text-transform: initial;
+}
