@@ -1,32 +1,41 @@
 "use strict";
 
-
 const leadNumber = document.querySelector(".fill_number");
 const clue = document.querySelector(".fill_clue");
+const attempts = document.querySelector(".fill_attempts")
+const max = 100;
+const generatedNumber = Math.ceil(Math.random() * max);
+const button = document.querySelector(".button_test")
 
-var fillNumber = function getRandomNumber(max) {
+console.log(generatedNumber);
+
+function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
    }
-console.log(fillNumber);
-console.log(leadNumber);
 
-const clueNumber = (leadNumber) => {
-    if(number < fillNumber) {
-        clue.innerHTML = `Your number is too low.`;
+if(leadNumber < generatedNumber) {
+    clue.innerHTML = `Your number is too low.`;
     }
-    else if (number > fillNumber){
+else if (leadNumber > generatedNumber){
         clue.innerHTML = `Your number is too high.`;
     }
-    else if (number === fillNumber) {
+    else if (leadNumber === generatedNumber) {
         clue.innerHTML = `Congratulations! You guessed correctly.`
     }
-    else if (number < 1) {
+    else {
         clue.innerHTML = `Please enter a valid number.`
     }
-    else if (number > 100) {
-        clue.innerHTML = `Please enter a valid number.`
-    }
-}
+
+// function handleClickButton() {
+//   attempts.innerHTML = ('Numero de intentos:' + click++);
+// }
+
+
+// for (let button = 0; button < 1000; button++) {
+//     attempts.innerHTML = ('Numero de intentos:' + button);
+//   }
+       
+// button.addEventListener( 'click' , handleClickButton );
 
 
    //get random number
