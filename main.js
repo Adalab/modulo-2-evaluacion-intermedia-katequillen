@@ -15,6 +15,7 @@ console.log(generatedNumber);
 
 //console.log(guess);
 
+// button.addEventListener('click', handleClickButton);
 
 if (guess.value < generatedNumber) {
     clue.innerHTML = `Your number is too low.`;
@@ -33,5 +34,3 @@ if (guess.value < generatedNumber) {
 // for (let i = 0; i < 10; i++) {
 //     attempts.innerHTML = ('Numero de intentos:' + i);
 //   }
-       
-// button.addEventListener( 'click' , handleClickButton );
