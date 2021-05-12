@@ -1,6 +1,6 @@
-.fill {
-  height: fit-content;
-  width: fit-content;
+.box {
+  height: 50px;
+  width: 80%vw;
   border: solid, black, 2px;
 }
 
