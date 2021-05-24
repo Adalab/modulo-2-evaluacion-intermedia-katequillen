@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Adivina el número</title>
   </head>
   <body class="main">
-    <h1>adivina el número</h1>
-    <h2>Introduce aquí to número</h2>
+    <h1>Guess the number</h1>
+    <h2>Enter your number here</h2>
 
-    <input type="number" id="number" value="">
-    <button class="button_test">
-        Prueba
-    </button>
+    <form class="js-form" action="#">
+      <label for="inputNumber">
+        <input
+          id="inputNumber"
+          type="number"
+          placeholder="Enter a number between 1-100"
+        />
+      </label>
+      <label for="button">
+        <input id="button" class="js-button" type="button" value="GUESS" />
+      </label>
+    </form>
 
-    <div class="box fill_clue">
-        Pista: Escribe tu número y dale a Prueba
-    </div>
-    <div class="box fill_attempts">
-        Numero de intentos: 
-    </div>
+    <p class="box">
+      Clue:
+      <span class="js-clue"
+        >Enter your number in the blank and press 'GUESS'</span
+      >
+    </p>
+    <p class="box fill_attempts">
+      Number of tries: <span class="js-count">0</span>
+    </p>
 
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
